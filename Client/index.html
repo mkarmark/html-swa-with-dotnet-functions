@@ -1,0 +1,20 @@
+<html>
+<head>
+
+    <script>
+        async function fetchData(){
+            const response = await fetch(/api/WeatherForecast);
+            const data = await response.json();
+            console.log(data);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        Sample HTML SWA with .NET Functions
+    </h1>
+    <button onclick="fetchData">Click me an check the console</button>
+</body>
+
+</html>
